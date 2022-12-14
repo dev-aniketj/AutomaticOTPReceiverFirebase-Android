@@ -1,5 +1,6 @@
 package com.aniketjain.automaticotpfirebase.receiver;
 
+import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 
 public class OTP_Receiver extends BroadcastReceiver
 {
+    @SuppressLint("StaticFieldLeak")
     private static EditText editText;
 
     public void setEditText(EditText editText)

@@ -57,7 +57,6 @@ public class ManageOtpActivity extends AppCompatActivity {
         et_otpNumber = binding.otpEt;
         new OTP_Receiver().setEditText(et_otpNumber);
 
-//        autoOtpReceiver();
     }
 
     private void initiateOtp() {
