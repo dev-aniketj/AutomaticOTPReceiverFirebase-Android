@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activity.ManageOtpActivity"
+    tools:ignore="HardcodedText">
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/filledTextField"-->
+    <!--        style="@style/BoxTextInputLayoutStyle"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginHorizontal="16dp"-->
+    <!--        android:hint="Enter OTP"-->
+    <!--        android:padding="4dp"-->
+    <!--        tools:ignore="HardcodedText">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:id="@+id/otp_et"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/otp_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Enter otp"
+        android:inputType="number"
+        android:padding="4dp"
+        android:textAlignment="center"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/verify_otp_btn"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/otp_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Verify Otp"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+</RelativeLayout>
