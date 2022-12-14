@@ -21,7 +21,9 @@ public class DashboardActivity extends AppCompatActivity {
         // set on click listener on the logout button
         binding.logoutBtn.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(this, MobileNumberActivity.class));
+            Intent intent = new Intent(this, MobileNumberActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
             finish();
         });
 
